@@ -1,0 +1,68 @@
+:root{
+    --main-color: #3D0FEE;
+    --color-white: #ffffff;
+    --gap: 3rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+font-family: 'Smooch Sans', sans-serif;
+*/
+
+html{
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 62,5%;
+    
+}
+
+body{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 6rem;
+}
+
+h2{
+    font-size: 5.5rem;
+}
+
+h3{
+    font-size: 5rem;
+}
+
+h4{
+    font-size: 4.5rem;
+}
+
+h5{
+    font-size: 4rem;
+}
+
+h6{
+    font-size: 3.5rem;
+}
+
+.main-bg{
+    background-image: url(../img/protruding-squares.svg);
+    background-position: center center;
+    color: var(--color-white);
+}
+
+.white-bg{
+    background: var(--color-white);
+}
+
+.main-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section{
+    min-height: 100vh;
+}
