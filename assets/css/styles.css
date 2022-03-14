@@ -2,6 +2,7 @@
     --main-color: #3D0FEE;
     --color-white: #ffffff;
     --gap: 3rem;
+    --border-color: #EEEEEE;
 }
 
 *{
@@ -21,6 +22,10 @@ html{
 
 body{
     font-size: 2rem;
+}
+
+a{
+    text-decoration: none;
 }
 
 h1{
@@ -55,14 +60,93 @@ h6{
 
 .white-bg{
     background: var(--color-white);
+    color: var(--main-color);
 }
 
 .main-content{
-    max-width: 1200px;
+    max-width: 120rem;
     margin: 0 auto;
     padding: var(--gap);
 }
 
 .section{
     min-height: 100vh;
+}
+
+.menu{
+    background: var(--color-white);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 0.01rem solid var(--border-color);
+    z-index: 1;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: #2302a8;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.intro-content{
+    display: grid;
+    position: relative;
+    top: -5rem;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    align-items: center;
+    height: 100vh;
+}
+
+.intro-text, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text h2{
+    font-size: 7rem;
+    margin-bottom: 3rem;
+    line-height: 0.9;
+}
+
+.intro-img img{
+    max-width: 30rem;
+    height: 100%;
+    max-height: 30rem;
+    width: 100%;
 }
