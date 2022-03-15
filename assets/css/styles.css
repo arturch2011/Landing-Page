@@ -17,6 +17,7 @@ font-family: 'Smooch Sans', sans-serif;
 html{
     font-family: 'Smooch Sans', sans-serif;
     font-size: 62,5%;
+    scroll-behavior: smooth;
     
 }
 
@@ -64,7 +65,7 @@ h6{
 }
 
 .main-content{
-    max-width: 120rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: var(--gap);
 }
@@ -136,6 +137,7 @@ h6{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .intro-text h2{
