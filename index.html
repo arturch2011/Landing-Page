@@ -26,7 +26,17 @@
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
+            <div>
+                <button onclick="darkMode()">D-mode</button>
+              </div>
+              <script>
+                function darkMode() {
+                  var element = document.body;
+                  element.classList.toggle("dark-mode");
+                }
+              </script>
         </div>
+        
     </aside>
 
     <section id="intro" class="intro main-bg section top-menu">

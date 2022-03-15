@@ -10,6 +10,13 @@
     padding: 0;
 }
 
+:root .dark-mode{
+    --main-color: #ffffff;
+    --color-white: #222222;
+    --border-color: #111111;
+
+}
+
 /*
 font-family: 'Smooch Sans', sans-serif;
 */
@@ -56,7 +63,7 @@ h6{
 .main-bg{
     background-image: url(../img/protruding-squares.svg);
     background-position: center center;
-    color: var(--color-white);
+    color: #ffffff;
 }
 
 .white-bg{
@@ -88,11 +95,20 @@ h6{
     display: flex;
 }
 
+.menu button {
+    border-style: none;
+    background-color: transparent;
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+
 .menu ul li a {
     display: block;
     padding: 2rem;
     font-size: 1.8rem;
     position: relative;
+    color: var(--main-color);
 }
 
 .menu ul li a::after{
@@ -102,7 +118,7 @@ h6{
     left: 50%;
     width: 0;
     height: 0.2rem;
-    background: #2302a8;
+    background: var(--main-color);
     transition: all 300ms ease-in-out;
 }
 
@@ -113,6 +129,10 @@ h6{
 
 .menu h1 {
     font-size: 2.3rem;
+}
+
+.menu h1 a{
+    color: var(--main-color);
 }
 
 .menu-content{
