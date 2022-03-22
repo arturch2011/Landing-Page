@@ -159,12 +159,14 @@ h6{
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text, .intro-img{
     display: flex;
-    flex-flow: column wrap;
+    /*flex-flow: column wrap;*/
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
@@ -179,8 +181,9 @@ h6{
 .how-content{
     max-width: 60rem;
     display: flex;
-    height: 100vh;
-    flex-flow: column wrap;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -188,8 +191,9 @@ h6{
 
 .top-content{
     display: flex;
-    height: 100vh;
-    flex-flow: column wrap;
+    min-height: 100vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
@@ -225,4 +229,45 @@ h6{
     left: -1rem;
     transform: rotate(5deg);
 
+}
+
+.img-animation{
+    transition: all 300ms ease-in-out;
+}
+
+.img-animation:hover{
+    transform: scale(1.05) rotate(5deg);
+}
+
+.responsive-table{
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+table{
+    min-width: 36rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td, table th{
+    white-space: nowrap;
+    padding: 1rem;
+    border: 0.1rem solid orange;]
+    text-align: left;
+}
+
+tfoot, table th{
+    background: rgb(100, 65, 1);
+}
+
+table caption{
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+#gallery p{
+    padding-bottom: 1rem;
 }
