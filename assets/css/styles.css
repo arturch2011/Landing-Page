@@ -8,6 +8,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root .dark-mode{
@@ -110,6 +111,7 @@ h6{
     font-family: 'Smooch Sans', sans-serif;
     font-size: 1.3rem;
     color: var(--main-color);
+    cursor: pointer;
 }
 
 .menu ul li a {
@@ -155,7 +157,6 @@ h6{
 .intro-content{
     display: grid;
     position: relative;
-    top: -5rem;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     align-items: center;
@@ -271,3 +272,84 @@ table caption{
 #gallery p{
     padding-bottom: 1rem;
 }
+
+.contact-form{
+    grid-column: span 2;
+}
+ .contact-form .form-grid{
+     border-color: var(--main-color);
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: var(--gap);
+ }
+
+ .form-grid legend{
+     margin-bottom: 3rem;
+     margin-left: 1rem;
+     font-size: 3rem;
+ }
+
+ .form-grou{
+     flex: 1 1 25rem;
+
+ }
+
+ .form-grou label{
+     display: block;
+     margin: 0 1rem;
+ }
+
+ .form-grou input,
+ .form-grou textarea{
+     margin: 0 1rem;
+     padding: 1rem 1rem;
+     border: none;
+     background: var(--border-color);
+     color: var(--main-color);
+     width: 90%;
+     font-family: 'Smooch Sans', sans-serif;
+     font-size: 1.5rem;
+ }
+
+ body .full-width{
+     width: 100;
+     flex: 1 1 100%;
+ }
+
+ .form-grou button{
+     border: 0.5rem solid var(--border-color);
+     background: var(--border-color);
+     padding: 1rem 1.5rem;
+     font-size: 1.5rem;
+     cursor: pointer;
+     font-family: 'Smooch Sans', sans-serif;
+     color: var(--main-color);
+     transition: all 300ms ease-in-out;
+     margin: 1rem;
+ }
+
+ .form-grou button:hover{
+     border-color:rgb(100, 65, 1);
+     background-color: rgb(100, 65, 1);
+ }
+
+ .intro-text p{
+     inherits: unset;
+ }
+
+
+ footer{
+     text-align: center;
+     font-size: 2rem;
+ }
+
+ footer p{
+     color: #ffffff;
+     margin: 0;
+     padding: 3rem;
+ }
+
+ .heart{
+     color: red;
+ }

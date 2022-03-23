@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="main-bg"> 
 
     <aside class="menu">
         <div class="main-content menu-content">
@@ -203,7 +203,46 @@
         </div>
     </section>
 
-    <section id="contact" class="white-bg section"></section>
+    <section id="contact" class="intro white-bg section top-menu">
+        <div class="main-content intro-content">
+            
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact-me</legend>
+
+                    <div class="form-grou">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your Name">
+                    </div>
+
+                    <div class="form-grou">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your Last Name">
+                    </div>
+
+                    <div class="form-grou">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Your e-mail">
+                    </div>
+
+                    <div class="form-grou full-width">
+                        <label for="message">Meassage</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message"></textarea>
+                    </div>
+
+                    <div class="form-grou full-width">
+                       <button type="submit">Submit</button>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+
+       
+    </section>
+
+    <footer class="main-bg">
+        <p>Made with <spam class="heart">&#9829</spam> by Artur Hashimoto</p>
+    </footer>
 </body>
 
 </html>
