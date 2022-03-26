@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +14,12 @@
 
 <body class="main-bg">
 
-    <a class="back-to-top" href="#home">NFT</a>
+    <header>
+        <a class="back-to-top" href="#home">NFT</a>
+    </header>
 
-    <input type="checkbox" class="close-menu" aria-label="Close menu"
-    role="button" id="close-menu">
+
+    <input type="checkbox" aria-pressed="true" class="close-menu" aria-label="Close menu" role="button" id="close-menu">
     <label for="close-menu" class="close-menu-label" title="close menu"></label>
 
     <aside class="menu">
@@ -26,7 +28,7 @@
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
-                    <li><a href="#top-3">top 3</a></li>
+                    <li><a href="#top-3">top</a></li>
                     <li><a href="#gallery">gallery</a></li>
                     <li><a href="#price">pricing</a></li>
                     <li><a href="#contact">contact</a></li>
@@ -46,7 +48,7 @@
                     Bitcoin. You will end up with Bitcoin in both cases.</p>
             </div>
             <div class="intro-img">
-                <img src="assets\img\Bored-Ape-400-ETH-PNG.png" alt="macaco soltando laser pelos olhos">
+                <img src="assets/img/Bored-Ape-400-ETH-PNG.png" alt="macaco soltando laser pelos olhos">
             </div>
         </div>
     </section>
@@ -203,6 +205,7 @@
 
     <section id="contact" class="intro white-bg section top-menu">
         <div class="main-content intro-content top">
+            <h2 class="hide">Contact-me</h2>
 
             <div class="contact-form">
                 <fieldset class="form-grid">
@@ -239,7 +242,7 @@
     </section>
 
     <footer class="main-bg">
-        <p>Made with <spam class="heart">&#9829</spam> by Artur Hashimoto</p>
+        <p>Made with <span class="heart">❤</span> by Artur Hashimoto</p>
     </footer>
 </body>
 

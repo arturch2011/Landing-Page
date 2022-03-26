@@ -344,6 +344,14 @@ table caption{
      display: none;
  }
 
+ header{
+    display: none;
+ }
+
+ .hide{
+     display: none;
+ }
+
  @media (max-width: 1200px){
      .two-fr{
          grid-template-columns: 1fr  1fr;
@@ -415,6 +423,17 @@ table caption{
         padding: 0.1rem;
         cursor: pointer;
         color: var(--main-color);
+    }
+
+    header{
+        display: block;
+        background: var(--color-white);
+        position: fixed;
+        height: 4rem;
+        top: 0;
+        width: 100%;
+        border-bottom: 0.01rem solid var(--border-color);
+        z-index: 1;
     }
 
  }
