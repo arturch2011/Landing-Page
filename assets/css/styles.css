@@ -1,21 +1,14 @@
 :root{
-    --main-color: #3D0FEE;
-    --color-white: #ffffff;
+    --main-color: #ffffff;
+    --color-white: #222222;
     --gap: 3rem;
-    --border-color: #EEEEEE;
+    --border-color: #111111;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root .dark-mode{
-    --main-color: #ffffff;
-    --color-white: #222222;
-    --border-color: #111111;
-
 }
 
 /*
@@ -105,15 +98,6 @@ h6{
     display: flex;
 }
 
-.menu button {
-    border-style: none;
-    background-color: transparent;
-    font-family: 'Smooch Sans', sans-serif;
-    font-size: 1.3rem;
-    color: var(--main-color);
-    cursor: pointer;
-}
-
 .menu ul li a {
     display: block;
     padding: 2rem;
@@ -185,7 +169,6 @@ h6{
     min-height: 100vh;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -246,7 +229,6 @@ h6{
 }
 
 table{
-    min-width: 36rem;
     width: 100%;
     border-collapse: collapse;
 }
@@ -353,3 +335,88 @@ table caption{
  .heart{
      color: red;
  }
+
+ .close-menu{
+     display: none;
+ }
+
+ .back-to-top{
+     display: none;
+ }
+
+ @media (max-width: 1200px){
+     .two-fr{
+         grid-template-columns: 1fr  1fr;
+     }
+     .top{
+        padding-top: 9rem;
+    }
+ }
+
+ @media (max-width: 700px) {
+     .intro-content, .grid{
+         grid-template-columns: 1fr;
+     }
+
+     .top{
+         padding-top: 9rem;
+     }
+
+     .menu{
+         bottom: 0;
+         text-align: center;
+         display: none;
+     }
+
+     .menu-content, .menu-content ul{
+         flex-direction: column;
+         justify-content: center;
+     }
+
+     .menu-content{
+         height: 100vh;
+     }
+
+     .close-menu-label::after{
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.1rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu{
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after{
+        display: block;
+        content: 'x';
+    }
+
+    .back-to-top{
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: 0.5rem;
+        left: 0.5rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.1rem;
+        cursor: pointer;
+        color: var(--main-color);
+    }
+
+ }
+
+ 

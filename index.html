@@ -12,13 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="main-bg"> 
+<body class="main-bg">
+
+    <a class="back-to-top" href="#home">NFT</a>
+
+    <input type="checkbox" class="close-menu" aria-label="Close menu"
+    role="button" id="close-menu">
+    <label for="close-menu" class="close-menu-label" title="close menu"></label>
 
     <aside class="menu">
         <div class="main-content menu-content">
-            <h1><a href="#home">NFT</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">NFT</a></h1>
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
                     <li><a href="#top-3">top 3</a></li>
                     <li><a href="#gallery">gallery</a></li>
@@ -26,21 +32,13 @@
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
-            <div>
-                <button onclick="darkMode()">D-mode</button>
-            </div>
-            <script>
-                function darkMode() {
-                    var element = document.body;
-                    element.classList.toggle("dark-mode");
-                }
-            </script>
+
         </div>
 
     </aside>
 
     <section id="home" class="intro main-bg section top-menu">
-        <div class="main-content intro-content">
+        <div class="main-content intro-content top">
             <div class="intro-text">
                 <h2>What is NFT?</h2>
                 <p>NFT means non-fungible token, and non-fungible means that this token is unique and can't be replaced.
@@ -54,7 +52,7 @@
     </section>
 
     <section id="intro" class="white-bg section">
-        <div class="main-content how-content">
+        <div class="main-content how-content top">
             <h2>How it works ?</h2>
             <p>
                 NFTs are marketed and distributed through online marketplaces such as <a
@@ -82,10 +80,10 @@
     </section>
 
     <section id="top-3" class="main-bg section">
-        <div class="main-content top-content">
+        <div class="main-content top-content top">
             <h2 class="top-grid-title">Top 3 NFTs colections</h2>
             <p class="top-grid-description">This are the most famous NFTs collections</p>
-            <div class="grid">
+            <div class="grid two-fr">
                 <article>
                     <h3>CLONE X-X TAKASHI MURAKAMI</h3>
                     <p>The CLONE X - X TAKASHI MURAKAMI NFT collection is made up of 19,092 assets, all of which are
@@ -115,10 +113,10 @@
     </section>
 
     <section id="gallery" class="white-bg section">
-        <div class="main-content top-content">
+        <div class="main-content top-content top">
             <h2 class="top-grid-title">Gallery</h2>
             <p class="top-grid-description">Anything</p>
-            <div class="grid">
+            <div class="grid two-fr">
                 <div class="intro-img img-animation">
                     <img src="assets/img/12335.png" alt="random nft">
                 </div>
@@ -143,7 +141,7 @@
     </section>
 
     <section id="price" class="main-bg section">
-        <div class="main-content how-content">
+        <div class="main-content how-content top">
             <h2>Pricing</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. In voluptatum vero aperiam reiciendis enim.
@@ -151,7 +149,7 @@
                 tenetur veritatis ab?
             </p>
 
-            <div class="responsive-table"> 
+            <div class="responsive-table">
                 <table>
                     <caption>Pricing table</caption>
 
@@ -204,8 +202,8 @@
     </section>
 
     <section id="contact" class="intro white-bg section top-menu">
-        <div class="main-content intro-content">
-            
+        <div class="main-content intro-content top">
+
             <div class="contact-form">
                 <fieldset class="form-grid">
                     <legend>Contact-me</legend>
@@ -231,13 +229,13 @@
                     </div>
 
                     <div class="form-grou full-width">
-                       <button type="submit">Submit</button>
+                        <button type="submit">Submit</button>
                     </div>
                 </fieldset>
             </div>
         </div>
 
-       
+
     </section>
 
     <footer class="main-bg">
